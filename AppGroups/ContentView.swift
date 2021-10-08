@@ -31,12 +31,15 @@ struct ContentView: View {
                             .stroke(.gray.opacity(0.2), lineWidth: 1)
                     )
                 Button("Submit") {
+                    dismissKeyboard()
                     AppGroupsData.shared.saveText(text)
                 }
             }.padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
-        }.onTapGesture {
-            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         }
+    }
+    
+    private func dismissKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
