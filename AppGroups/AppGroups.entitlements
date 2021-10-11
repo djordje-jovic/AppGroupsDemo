@@ -6,5 +6,9 @@
 	<array>
 		<string>group.E8C46L5TFQ.com.gge.appgroups</string>
 	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>$(AppIdentifierPrefix)com.gge.sharedkeychain</string>
+	</array>
 </dict>
 </plist>

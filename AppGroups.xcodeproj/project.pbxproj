@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745DF37027144AB9002862A9 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 745DF36F27144AB9002862A9 /* SwiftKeychainWrapper */; };
+		745DF37327144AC6002862A9 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 745DF37227144AC6002862A9 /* SwiftKeychainWrapper */; };
+		745DF376271451D9002862A9 /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DF375271451D9002862A9 /* UIImage+Rotation.swift */; };
+		745DF377271451D9002862A9 /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DF375271451D9002862A9 /* UIImage+Rotation.swift */; };
 		7460241E2710410200F6A9CE /* AppGroupsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460241D2710410200F6A9CE /* AppGroupsApp.swift */; };
 		746024202710410200F6A9CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7460241F2710410200F6A9CE /* ContentView.swift */; };
 		746024222710410500F6A9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746024212710410500F6A9CE /* Assets.xcassets */; };
@@ -22,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		745DF375271451D9002862A9 /* UIImage+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotation.swift"; sourceTree = "<group>"; };
 		7460241A2710410200F6A9CE /* App1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7460241D2710410200F6A9CE /* AppGroupsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupsApp.swift; sourceTree = "<group>"; };
 		7460241F2710410200F6A9CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745DF37027144AB9002862A9 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745DF37327144AC6002862A9 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		745DF37127144AC6002862A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		745DF37427144B79002862A9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7460244327104D9500F6A9CE /* AppGroupsData.swift */,
+				7492BEEA2714302700568EBC /* ImagePicker.swift */,
+				745DF375271451D9002862A9 /* UIImage+Rotation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		746024112710410200F6A9CE = {
 			isa = PBXGroup;
 			children = (
 				7492BEE82710538E00568EBC /* README.md */,
 				7460241C2710410200F6A9CE /* AppGroups */,
 				7460241B2710410200F6A9CE /* Products */,
+				745DF37127144AC6002862A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,13 +98,12 @@
 		7460241C2710410200F6A9CE /* AppGroups */ = {
 			isa = PBXGroup;
 			children = (
+				746024232710410500F6A9CE /* Preview Content */,
+				745DF37427144B79002862A9 /* Utils */,
 				7460242B2710416700F6A9CE /* AppGroups.entitlements */,
 				7460241D2710410200F6A9CE /* AppGroupsApp.swift */,
-				7460244327104D9500F6A9CE /* AppGroupsData.swift */,
 				746024212710410500F6A9CE /* Assets.xcassets */,
 				7460241F2710410200F6A9CE /* ContentView.swift */,
-				7492BEEA2714302700568EBC /* ImagePicker.swift */,
-				746024232710410500F6A9CE /* Preview Content */,
 			);
 			path = AppGroups;
 			sourceTree = "<group>";
@@ -108,6 +132,9 @@
 			dependencies = (
 			);
 			name = App1;
+			packageProductDependencies = (
+				745DF36F27144AB9002862A9 /* SwiftKeychainWrapper */,
+			);
 			productName = AppGroups;
 			productReference = 7460241A2710410200F6A9CE /* App1.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +152,9 @@
 			dependencies = (
 			);
 			name = App2;
+			packageProductDependencies = (
+				745DF37227144AC6002862A9 /* SwiftKeychainWrapper */,
+			);
 			productName = App2;
 			productReference = 74602430271041CE00F6A9CE /* App2.app */;
 			productType = "com.apple.product-type.application";
@@ -156,6 +186,9 @@
 				Base,
 			);
 			mainGroup = 746024112710410200F6A9CE;
+			packageReferences = (
+				745DF36E27144AB9002862A9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 7460241B2710410200F6A9CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +228,7 @@
 				746024202710410200F6A9CE /* ContentView.swift in Sources */,
 				7492BEEB2714302700568EBC /* ImagePicker.swift in Sources */,
 				7460244427104D9500F6A9CE /* AppGroupsData.swift in Sources */,
+				745DF376271451D9002862A9 /* UIImage+Rotation.swift in Sources */,
 				7460241E2710410200F6A9CE /* AppGroupsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +240,7 @@
 				7460243F271046CB00F6A9CE /* ContentView.swift in Sources */,
 				7492BEEC2714302700568EBC /* ImagePicker.swift in Sources */,
 				7460244527104D9500F6A9CE /* AppGroupsData.swift in Sources */,
+				745DF377271451D9002862A9 /* UIImage+Rotation.swift in Sources */,
 				74602441271046CB00F6A9CE /* AppGroupsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +376,7 @@
 				DEVELOPMENT_TEAM = E8C46L5TFQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera description.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -373,6 +409,7 @@
 				DEVELOPMENT_TEAM = E8C46L5TFQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera description.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -405,6 +442,7 @@
 				DEVELOPMENT_TEAM = E8C46L5TFQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera description.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,6 +475,7 @@
 				DEVELOPMENT_TEAM = E8C46L5TFQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera description.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -488,6 +527,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		745DF36E27144AB9002862A9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		745DF36F27144AB9002862A9 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 745DF36E27144AB9002862A9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		745DF37227144AC6002862A9 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 745DF36E27144AB9002862A9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 746024122710410200F6A9CE /* Project object */;
 }
